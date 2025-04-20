@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>할 일 목록</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>할 일 목록</h1>
+    <button id="addTaskBtn">+Add a Task</button>
+    <div id="taskInputContainer" class="hidden">
+      <textarea id="taskInput" placeholder="제목&#10;(선택)세부내용"></textarea>
+      <div class="input-actions">
+        <span id="saveIcon">💾</span>
+        <span id="cancelIcon">❌</span>
+      </div>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
