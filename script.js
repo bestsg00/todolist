@@ -164,6 +164,14 @@ saveIcon.addEventListener("click", () => {
     taskInputContainer.classList.add("hidden");
   }
 });
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(reg => console.log("Service Worker 등록됨:", reg))
+      .catch(err => console.error("등록 실패:", err));
+  });
+}
+
 
 // 🚀 초기 로딩 시
 loadTasksFromLocalStorage();
